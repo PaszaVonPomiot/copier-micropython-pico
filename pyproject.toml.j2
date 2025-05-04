@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "{{project_description}}"
 readme = "README.md"
 requires-python = ">=3.13"  # for type annotations only
-dependencies = []
+dependencies = [
+    "micropython-rp2-stubs",
+]
 
 [tool.ruff]
 lint.ignore = ["F401"]  # Ignore unused imports
