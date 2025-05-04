@@ -1,0 +1,21 @@
+# settings
+_min_copier_version: 9.1.0
+_templates_suffix: .j2
+_message_after_copy: Project "{{ project_name }}" has been created in folder "{{ _copier_conf.dst_path }}"
+
+
+# questions
+project_name:
+    type: str
+    help: Project name eg. "micropython-led-blink". This will be the name of project folder and git repository.
+    default: example-project
+
+project_title:
+    type: str
+    help: Project title eg. "Blinking LED in Micropython". This will be the readme title.
+    default: Example title
+
+project_description:
+    type: str
+    help: Short description of the project
+    default: Example description.
