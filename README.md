@@ -1,27 +1,15 @@
-# {{project_title}}
-{{project_description}} 
-
-## Hardware
-
--   [Raspberry Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/)
--   ...
-
-## Software
-
--   [MicroPython](https://micropython.org/download/RPI_PICO/) - Pico firmware (RP2 port)
+# Copier template for Micropython projects
 
 ## Installation
-
-## Functional description
-
-## Pinout
-
-## Interfaces
-
-## Code examples
-
-```py
-# Start working
-print("Working...")
+```sh
+uv tool install copier
 ```
 
+## Usage
+Create project from template.
+
+```
+copier copy <template_folder> <destination_folder>  
+copier copy https://github.com/PaszaVonPomiot/copier-micropython-pico.git project-name  
+copier copy gh:PaszaVonPomiot/copier_template_core project-name --vcs-ref develop
+```
