@@ -10,8 +10,7 @@ dependencies = []
 lint.ignore = ["F401"]  # Ignore unused imports
 
 [tool.mypy]
-ignore_missing_imports = true
-follow_imports = "silent"
+custom_typeshed_dir = ".venv/Lib/site-packages"
 
 [dependency-groups]
 dev = [
