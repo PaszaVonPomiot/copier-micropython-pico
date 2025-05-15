@@ -3,7 +3,7 @@ name = "{{project_name}}"
 version = "0.1.0"
 description = "{{project_description}}"
 readme = "README.md"
-requires-python = ">=3.13"  # for type annotations only
+requires-python = ">=3.13"
 dependencies = []
 
 [tool.ruff]
@@ -12,6 +12,7 @@ lint.ignore = ["F401"]  # Ignore unused imports
 [tool.mypy]
 mypy_path = ".venv/Lib/site-packages"
 custom_typeshed_dir = ".venv/Lib/site-packages"
+disallow_untyped_defs = true
 
 [dependency-groups]
 dev = [
