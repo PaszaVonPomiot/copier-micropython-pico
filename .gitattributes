@@ -1,6 +1,9 @@
+# Later match overrides an earlier match
+
 # CRLF for Windows scripts
 *.bat text eol=crlf
 *.ps1 text eol=crlf
 
-# LF for all other text files
-* text eol=lf
+# LF for other text files
+*.py text eol=lf
+*.md text eol=lf
